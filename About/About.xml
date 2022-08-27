@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+<name>Medieval Overhaul Misc. Patches</name>
+<author>Jsin0</author>
+<supportedVersions><li>1.3</li></supportedVersions>
+<packageId>Jsin.MedievalOverhaulMisc</packageId>
+<description>This mod introduces a variety of patches to try to harmonize a few the mods that fit in a medieval fantasy playthrough.</description>
+	<modDependencies>
+		<li>
+			<packageId>DankPyon.Medieval.Overhaul</packageId>
+			<displayName>Medieval Overhaul</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2553700067</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>VanillaExpanded.VCookEStews</li>
+		<li>Owlchemist.CherryPicker</li>
+		<li>DankPyon.Medieval.Overhaul</li>
+		<li>JangoDsoul.CastleWalls</li>
+		<li>Mlie.Apothecary</li>
+		<li>sarg.magicalmenagerie</li>
+		<li>VanillaExpanded.VCookESushi</li>
+		<li>VanillaExpanded.VBrewE</li>
+		<li>VanillaExpanded.VCookE</li>
+		<li>sarg.alphaanimals</li>
+		<li>vanillaexpanded.vplantsemore</li>
+		<li>sargoskar.racetotherim</li>
+		<li>pdxthehunted.srts.medievaltweaks</li>
+		<li>Neronix17.Outland.Core</li>
+		<li>me.lubar.vanillabooksexpandedexpanded</li>
+		<li>aoba.tent</li>
+		<li>neronix17.outland.eastbornempire</li>
+		<li>vanillaexpanded.vplantse</li>
+		<li>mooloh.dndmenagerie</li>
+		<li>Argon.LVMEu</li>
+		<li>Argon.VMEu</li>
+		<li>Lilscoot.Wheelchairs</li>
+		<li>neronix17.outland.redburnpact</li>
+	</loadAfter>
+</ModMetaData>

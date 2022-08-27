@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>Vanilla Plants Expanded - More Plants</li>
+    </mods>
+		<match Class="PatchOperationSequence">
+		  <operations>
+		<!-- Replacing Garlic -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef/ingredients/li/filter/thingDefs[li="DankPyon_RawGarlic"]/li</xpath>
+				<value>
+					<li>VCE_RawGarlic</li>
+				</value>
+			</li>
+		<!-- Replacing Carrot-->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef/ingredients/li/filter/thingDefs[li="DankPyon_RawCarrots"]/li</xpath>
+				<value>
+					<li>VCE_RawCarrot</li>
+				</value>
+			</li>
+			<!-- etc -->
+			</operations>	
+		</match>	
+	</Operation>
+</Patch>
+ 
+   

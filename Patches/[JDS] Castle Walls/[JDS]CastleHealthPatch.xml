@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[JDS] Castle Walls</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[
+					defName = "JDS_WallsTwo" or
+					defName = "JDS_Walls" or
+					defName = "JDS_Walls_Embrasure" or
+					defName = "JDS_Walls_End" or
+					defName = "JDS_Walls_L_connector" or
+					defName = "JDS_Walls_T_connector" or
+					defName = "JDS_Wall_X_connector" or
+					defName = "JDS_Tower" or
+					defName = "JDS_Tower_connector" or
+					defName = "JDS_Tower_I_connector" or
+					defName = "JDS_Tower_T_connector" or
+					defName = "JDS_Tower_L_connector"
+					]/statBases/MaxHitPoints
+				</xpath>
+				<value>
+					<MaxHitPoints>2200</MaxHitPoints>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[@Name = "CaslteDefendsBase"]/statBases/MaxHitPoints</xpath>
+				<value>
+					<MaxHitPoints>2200</MaxHitPoints>
+				</value>
+			</li>
+		</operations>
+		</match>
+	</Operation>
+</Patch>

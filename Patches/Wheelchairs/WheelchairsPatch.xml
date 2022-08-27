@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>Wheelchairs</li>
+    </mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Wheelchair"]/techLevel</xpath>
+				<value>
+					<techLevel>Medieval</techLevel>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="Wheelchair"]/stuffCategories</xpath>
+				<value>
+					<li>Woody</li>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Wheelchair"]/costList/ComponentIndustrial</xpath>
+				<value>
+					<DankPyon_ComponentBasic>2</DankPyon_ComponentBasic>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="Wheelchair"]/recipeMaker/recipeUsers</xpath>
+				<value>
+					<li>DankPyon_Workbench</li>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Wheelchair"]/recipeMaker/researchPrerequisite</xpath>
+				<value>
+					<researchPrerequisite>DankPyon_Engineering</researchPrerequisite>
+				</value>
+			</li>
+			<!-- etc -->
+			</operations>
+		</match>	
+	</Operation>
+</Patch>

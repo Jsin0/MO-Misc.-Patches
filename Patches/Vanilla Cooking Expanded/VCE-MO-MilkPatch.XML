@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>Vanilla Cooking Expanded</li>
+    </mods>
+		<match Class="PatchOperationSequence">
+		  <operations>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs</xpath>
+				<value>
+					<ItemProcessor.CombinationDef>
+						<defName>MOVCE_MilkIntoCheese</defName>
+						<building>DankPyon_Presser</building>
+						<items>
+							<li>Milk</li>
+						</items>	
+						<amount>
+							<li>50</li>
+						</amount>
+						<result>VCE_Cheese</result>	
+						<yield>25</yield>
+						<useQualityIncreasing>true</useQualityIncreasing>
+						<awfulQualityAgeDaysThreshold>10</awfulQualityAgeDaysThreshold>
+						<poorQualityAgeDaysThreshold>15</poorQualityAgeDaysThreshold>
+						<normalQualityAgeDaysThreshold>25</normalQualityAgeDaysThreshold>
+						<goodQualityAgeDaysThreshold>35</goodQualityAgeDaysThreshold>
+						<excellentQualityAgeDaysThreshold>40</excellentQualityAgeDaysThreshold>
+						<masterworkQualityAgeDaysThreshold>45</masterworkQualityAgeDaysThreshold>
+						<legendaryQualityAgeDaysThreshold>75</legendaryQualityAgeDaysThreshold>
+					</ItemProcessor.CombinationDef>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd" MayRequire="sarg.alphaanimals">
+				<xpath>/Defs</xpath>
+				<value>
+					<ItemProcessor.CombinationDef>
+						<defName>MOVCE_BlueMilkIntoCheese</defName>
+						<building>DankPyon_Presser</building>
+						<items>
+							<li>AA_BlueMilk</li>
+						</items>	
+						<amount>
+							<li>50</li>
+						</amount>
+						<result>VCE_BlueCheese</result>	
+						<yield>25</yield>
+						<useQualityIncreasing>true</useQualityIncreasing>
+						<awfulQualityAgeDaysThreshold>10</awfulQualityAgeDaysThreshold>
+						<poorQualityAgeDaysThreshold>15</poorQualityAgeDaysThreshold>
+						<normalQualityAgeDaysThreshold>25</normalQualityAgeDaysThreshold>
+						<goodQualityAgeDaysThreshold>35</goodQualityAgeDaysThreshold>
+						<excellentQualityAgeDaysThreshold>40</excellentQualityAgeDaysThreshold>
+						<masterworkQualityAgeDaysThreshold>45</masterworkQualityAgeDaysThreshold>
+						<legendaryQualityAgeDaysThreshold>75</legendaryQualityAgeDaysThreshold>
+					</ItemProcessor.CombinationDef>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd" MayRequire="sarg.alphaanimals">
+				<xpath>/Defs</xpath>
+				<value>
+					<ItemProcessor.CombinationDef>
+						<defName>MOVCE_GowMilkIntoCheese</defName>
+						<building>DankPyon_Presser</building>
+						<items>
+							<li>AA_GowMilk</li>
+						</items>	
+						<amount>
+							<li>50</li>
+						</amount>
+						<result>VCE_GowCheese</result>	
+						<yield>25</yield>
+						<useQualityIncreasing>true</useQualityIncreasing>
+						<awfulQualityAgeDaysThreshold>13</awfulQualityAgeDaysThreshold>
+						<poorQualityAgeDaysThreshold>15</poorQualityAgeDaysThreshold>
+						<normalQualityAgeDaysThreshold>25</normalQualityAgeDaysThreshold>
+						<goodQualityAgeDaysThreshold>35</goodQualityAgeDaysThreshold>
+						<excellentQualityAgeDaysThreshold>40</excellentQualityAgeDaysThreshold>
+						<masterworkQualityAgeDaysThreshold>45</masterworkQualityAgeDaysThreshold>
+						<legendaryQualityAgeDaysThreshold>75</legendaryQualityAgeDaysThreshold>
+					</ItemProcessor.CombinationDef>
+				</value>
+			</li>
+			<!-- etc -->
+			</operations>
+		</match>	
+	</Operation>
+</Patch>
+ 
+   

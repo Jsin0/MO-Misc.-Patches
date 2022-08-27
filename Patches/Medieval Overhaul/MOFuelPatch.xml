@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence" MayRequire="sargoskar.racetotherim">
+		<operations>
+
+<!--Vanilla Cooking Expanded-->
+			<li Class="PatchOperationAdd" MayRequire="vanillaexpanded.vcooke">
+				<xpath>Defs/ThingDef[defName="VCE_Grill"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+				<value>
+					<li>DankPyon_DarkWoodLog</li>
+					<li>DankPyon_ElvenWoodLog</li>
+					<li>DankPyon_DryadWoodLog</li>
+					<li>DankPyon_AncientWoodLog</li>
+				</value>
+			</li>
+<!-- Vanilla Cooking Expanded - Stewpot -->
+			<li Class="PatchOperationAdd" MayRequire="vanillaexpanded.vcookestews">
+				<xpath>Defs/ThingDef[defName="VCE_StewPot"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+				<value>
+					<li>DankPyon_DarkWoodLog</li>
+					<li>DankPyon_ElvenWoodLog</li>
+					<li>DankPyon_DryadWoodLog</li>
+					<li>DankPyon_AncientWoodLog</li>
+				</value>
+			</li>
+<!-- SRTS Expanded Medieval Tweaks and Translations - Raider Airship and Merchant Zeppelin -->
+			<li Class="PatchOperationAdd"  MayRequire="pdxthehunted.srts.medievaltweaks"> 
+				<xpath>Defs/ThingDef[
+				defName="MSRTSHotBalloon" or
+				defName="MSRTSRaider" or
+				defName="MSRTSMerchantShip"
+				]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+				<value>
+					<li>DankPyon_DarkWoodLog</li>
+					<li>DankPyon_ElvenWoodLog</li>
+					<li>DankPyon_DryadWoodLog</li>
+					<li>DankPyon_AncientWoodLog</li>
+					<li>DankPyon_Coal</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd"  MayRequire="pdxthehunted.srts.medievaltweaks"> 
+				<xpath>Defs/ThingDef[
+				defName="MSRTSRaider" or
+				defName="MSRTSMerchantShip"
+				]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+				<value>
+					<li>DankPyon_Coal</li>
+				</value>
+			</li>
+<!-- Camping Tent -->
+			<li Class="PatchOperationAdd" MayRequire="aoba.tent">
+				<xpath>Defs/ThingDef[
+				defName="Canopy" or
+				defName="Teepee" or
+				defName="VikingTent" or
+				defName="ModernTent" or
+				defName="FoldingTent"or
+				defName="Tent"
+				]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+				<value>
+					<li>DankPyon_DarkWoodLog</li>
+					<li>DankPyon_ElvenWoodLog</li>
+					<li>DankPyon_DryadWoodLog</li>
+					<li>DankPyon_AncientWoodLog</li>
+				</value>
+			</li>
+<!-- Outland Core-->
+			<li Class="PatchOperationAdd" MayRequire="Neronix17.Outland.Core">
+				<xpath>Defs/ThingDef[
+				defName="Outland_Kiln" or
+				defName="Outland_Forge"
+				]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+				<value>
+					<li>DankPyon_DarkWoodLog</li>
+					<li>DankPyon_ElvenWoodLog</li>
+					<li>DankPyon_DryadWoodLog</li>
+					<li>DankPyon_AncientWoodLog</li>
+					<li>DankPyon_Coal</li>
+				</value>
+			</li>
+<!-- [O21] Outland - Eastborn Empire -->
+			<li Class="PatchOperationAdd" MayRequire="neronix17.outland.eastbornempire">
+				<xpath>Defs/ThingDef[
+				defName="Outland_Kamado"
+				]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+				<value>
+					<li>DankPyon_DarkWoodLog</li>
+					<li>DankPyon_ElvenWoodLog</li>
+					<li>DankPyon_DryadWoodLog</li>
+					<li>DankPyon_AncientWoodLog</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

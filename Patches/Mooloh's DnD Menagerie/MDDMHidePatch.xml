@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Mooloh's Dnd Menagerie</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!--Hides-->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<ThingDef ParentName="DankPyon_HideBaseMedium">
+							<defName>DND_Hide_DisplacerBeast</defName>
+							<label>displacer beast hide</label>
+							<graphicData>
+								<texPath>Resources/HideMedium</texPath>
+								<color>(20,20,20)</color>
+							</graphicData>
+							<statBases>
+									<MarketValue>495</MarketValue>
+							</statBases>
+							<butcherProducts Inherit="False">
+								<DND_Leather_DisplacerBeast>100</DND_Leather_DisplacerBeast>
+							</butcherProducts>
+							<stuffProps>
+									<color>(20,20,20)</color>
+							</stuffProps>
+						</ThingDef>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<ThingDef ParentName="DankPyon_HideBaseHuge">
+						<defName>DND_Hide_Owlbear</defName>
+							<label>owlbear hide</label>
+							<graphicData>
+								<texPath>Resources/HeavyFurHuge</texPath>
+								<color>(154,37,161)</color>
+							</graphicData>
+							<statBases>
+								<MarketValue>486</MarketValue>
+							</statBases>
+							<butcherProducts Inherit="False">
+								<DND_Leather_Owlbear>120</DND_Leather_Owlbear>
+							</butcherProducts>
+							<stuffProps>
+									<color>(154,37,161)</color>
+							</stuffProps>
+					</ThingDef>
+					</value>
+				</li>
+				<!-- Adding Hides to Displacer Beast and Owlbear-->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="DND_DisplacerBeast"]/lifeStages/li[3]</xpath>
+					<value>
+						<butcherBodyPart>
+							<bodyPartGroup>HeadAttackTool</bodyPartGroup>
+							<thing>DND_Hide_DisplacerBeast</thing>
+							<allowFemale>true</allowFemale>
+						</butcherBodyPart>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName = "DND_Owlbear"]/lifeStages/li[3]</xpath>
+					<value>
+						<butcherBodyPart>
+							<bodyPartGroup>HeadAttackTool</bodyPartGroup>
+							<thing>DND_Hide_Owlbear</thing>
+							<allowFemale>true</allowFemale>
+						</butcherBodyPart>
+					</value>
+				</li>
+				<!-- Adding the Hides to the Processes
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef [defName = "DankPyon_TreatAnyHideHuge"]/ingredients/li[1]/filter/thingDefs</xpath>
+					<value>
+						<li>DND_Hide_Owlbear</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef [defName = "DankPyon_TreatAnyHideHuge"]/fixedIngredientFilter/thingDefs</xpath>
+					<value>
+						<li>DND_Hide_Owlbear</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef [defName = "DankPyon_TreatAnyHideMedium"]/ingredients/li[1]/filter/thingDefs</xpath>
+					<value>
+						<li>DND_Hide_DisplacerBeast</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef [defName = "DankPyon_TreatAnyHideMedium"]/fixedIngredientFilter/thingDefs</xpath>
+					<value>
+						<li>DND_Hide_DisplacerBeast</li>
+					</value>
+				</li>
+				-->
+				<!-- Giving Medusa and Basilisks their leathers back -->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName ="DND_Medusa"]/race</xpath>
+					<value>
+						<leatherDef>Leather_Lizard</leatherDef>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "DND_Basilisk"]/race</xpath>
+					<value>
+						<leatherDef>Leather_Rhinoceros</leatherDef>
+					</value>
+				</li>
+				<!-- Giving Faerie Dragon a hide -->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName ="DND_FaerieDragon"]/lifeStages/li[3]</xpath>
+					<value>
+						<butcherBodyPart>
+							<bodyPartGroup>HeadAttackTool</bodyPartGroup>
+							<thing>DankPyon_Hide_ScaleTiny</thing>
+							<allowFemale>true</allowFemale>
+						</butcherBodyPart>
+					</value>
+				</li>
+				<!-- Allowing Rust Monster and Annihilator to drop Chitin if VFE Insectoids is loaded -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Factions Expanded - Insectoids</li>
+					</mods>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName ="DND_RustMonster" or defName ="DND_Annihilator"]</xpath>
+						<value>
+							<butcherProducts>
+							  <VFEI_Chitin>25</VFEI_Chitin>
+							</butcherProducts>
+						</value>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
