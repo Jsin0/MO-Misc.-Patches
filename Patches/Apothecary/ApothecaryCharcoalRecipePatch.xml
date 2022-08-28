@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-		<Operation Class="PatchOperationSequence" MayRequire="mlie.apothecary">
+		<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Apothecary (Continued)</li>
+		</mods>
+		<match Class="PatchOperationSequence">
 			  <operations>
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/RecipeDef[defName="MakeAYCharcoalFromBenches"]/description</xpath>
@@ -50,7 +54,7 @@
 						<li>DankPyon_Furnace</li>
 					</value>
 				</li>
-				
 			</operations>
+		</match>
 		</Operation>
 </Patch>

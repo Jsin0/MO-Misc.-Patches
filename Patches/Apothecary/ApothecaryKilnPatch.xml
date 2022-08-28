@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-		<Operation Class="PatchOperationSequence" MayRequire="mlie.apothecary">
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Apothecary (Continued)</li>
+		</mods>
+		<match Class="PatchOperationSequence">
 			<operations>
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs</xpath>
@@ -59,19 +63,15 @@
 				<li Class="PatchOperationRemove">
 					<xpath>/Defs/ThingDef[defName="AYCharcoalKiln"]/costList</xpath>
 				</li>
-				<li Class="PatchOperationFindMod">
-					<mods>
-					  <li>Simple FX: Smoke</li>
-					</mods>
-					<match Class="PatchOperationAdd">
-						<xpath>/Defs/ThingDef[defName="AYCharcoalKiln"]/comps</xpath>
-						<value>
-							<li Class="Flecker.CompProperties_Smoker">
-								<fleckDef>Owl_SmokeHeavy</fleckDef>
-							</li>
-						</value>
-					</match>
+				<li Class="PatchOperationAdd" MayRequire="owlchemist.simplefx.smoke2">
+					<xpath>/Defs/ThingDef[defName="AYCharcoalKiln"]/comps</xpath>
+					<value>
+						<li Class="Flecker.CompProperties_Smoker">
+							<fleckDef>Owl_SmokeHeavy</fleckDef>
+						</li>
+					</value>
 				</li>
 			</operations>
+		</match>
 		</Operation>
 </Patch>

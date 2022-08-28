@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-	<Operation Class="PatchOperationSequence" MayRequire="mlie.apothecary">
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Apothecary (Continued)</li>
+		</mods>
+		<match Class="PatchOperationSequence" MayRequire="mlie.apothecary">
 		  <operations>
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[
@@ -60,7 +64,7 @@
 			<li Class="PatchOperationAdd" MayRequire="Neronix17.Outland.Core">
 				<xpath>Defs/ThingDef[
 				defName="Outland_Kiln" or
-				defName="Outland_Forge" or
+				defName="Outland_Forge"
 				]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
 				<value>
 					<li>AYCharcoal</li>
@@ -76,5 +80,6 @@
 				</value>
 			</li>
 		</operations>
+		</match>
 	  </Operation>
 </Patch>
