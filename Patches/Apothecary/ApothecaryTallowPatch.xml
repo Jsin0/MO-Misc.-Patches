@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence" MayRequire="mlie.apothecary">
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/RecipeDef/ingredients/li/filter/thingDefs[li="AYTallow"]/li</xpath>
+				<value>
+					<li>DankPyon_Tallow</li>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/RecipeDef[defName="MakeAYLavenderSoap" or defName="MakeBulkAYLavenderSoap"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<thingDefs>
+						<li>DankPyon_Tallow</li>
+						<li>AYLavenderOil</li>
+						<li>AYPotash</li>
+						<li>AYLimewater</li>
+					  </thingDefs>
+				</value>
+			</li>
+			<!--
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName="MakeAYLavenderSoap"]/ingredients</xpath>
+				<value>
+					<ingredients>
+					  <li>
+						<filter>
+						  <thingDefs>
+							<li>DankPyon_Tallow</li>
+						  </thingDefs>
+						</filter>
+						<count>4</count>
+					  </li>
+					  <li>
+						<filter>
+						  <thingDefs>
+							<li>AYLavenderOil</li>
+						  </thingDefs>
+						</filter>
+						<count>1</count>
+					  </li>
+					  <li>
+						<filter>
+						  <thingDefs>
+							<li>AYPotash</li>
+							<li>AYLimewater</li>
+						  </thingDefs>
+						</filter>
+						<count>1</count>
+					  </li>
+					</ingredients>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName="MakeBulkAYLavenderSoap"]/ingredients</xpath>
+				<value>
+					<ingredients>
+					  <li>
+						<filter>
+						  <thingDefs>
+							<li>DankPyon_Tallow</li>
+						  </thingDefs>
+						</filter>
+						<count>20</count>
+					  </li>
+					  <li>
+						<filter>
+						  <thingDefs>
+							<li>AYLavenderOil</li>
+						  </thingDefs>
+						</filter>
+						<count>5</count>
+					  </li>
+					  <li>
+						<filter>
+						  <thingDefs>
+							<li>AYPotash</li>
+							<li>AYLimewater</li>
+						  </thingDefs>
+						</filter>
+						<count>5</count>
+					  </li>
+					</ingredients>
+				</value>
+			</li>
+			-->
+		</operations>
+	  </Operation>
+</Patch>
