@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		  <operations>
+		<!-- Replacing Cabbages -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="VCE_Cabbage"]/plant/harvestedThingDef</xpath>
+				<value>
+					<harvestedThingDef>DankPyon_RawCabbages</harvestedThingDef>
+				</value>
+			</li>
+		<!-- Replacing Pumpkins-->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="VCE_Pumpkin"]/plant/harvestedThingDef</xpath>
+				<value>
+					<harvestedThingDef>DankPyon_RawPumpkins</harvestedThingDef>
+				</value>
+			</li>
+		<!-- Replacing Onions-->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="VCE_Onion"]/plant/harvestedThingDef</xpath>
+				<value>
+					<harvestedThingDef>DankPyon_RawOnions</harvestedThingDef>
+				</value>
+			</li>
+		<!-- Replacing Tomatoes-->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="VCE_Tomato"]/plant/harvestedThingDef</xpath>
+				<value>
+					<harvestedThingDef>DankPyon_RawTomatoes</harvestedThingDef>
+				</value>
+			</li>
+		<!-- Replacing Apples -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="DankPyon_Tree_Apple"]/plant/harvestedThingDef</xpath>
+				<value>
+					<harvestedThingDef>VCE_RawApple</harvestedThingDef>
+				</value>
+			</li>
+			<!-- etc -->
+			</operations>
+	</Operation>
+</Patch>
+ 
+   

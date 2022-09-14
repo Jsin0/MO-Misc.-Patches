@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "AA_WaywardMobileAssembler"]/description</xpath>
+				<value>
+					<description>An automated, mobile factory. Mobile assemblers are built by master tinkerers to convert organic matter into useable stuff, such as building materials, munitions and explosives. This particular assembler seems to be lost and wandering aimlessly. It can be "tamed" and kept in check by the colony, since it is not sentient and lacks any concept of friend or foe.\n\nA wayward mobile assembler is very low maintenance, since it is resistant to damage, feels no pain, hovers over terrain, needs no rest whatsoever and can't get sick (lacks any organic components). It will however need to consume organics to power its internal batteries. It also lacks any kind of sentience, so it won't even flee from combat if attacked.</description>
+				</value>
+			  </li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "AA_WaywardMobileAssembler"]/comps/li[@Class="AnimalBehaviours.CompProperties_AnimalProduct"]/randomItems</xpath>
+				<value>
+					<li>DankPyon_ComponentBasic</li>
+					<li>DankPyon_IronIngot</li>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "AA_Slurrypede"]/description</xpath>
+				<value>
+					<description>The Slurrypede is a bio-mechanical automaton of unknown construction capable of devouring almost anything and processing it into an organic slurry. This slurry is edible for carnivore and omnivore animals, but barely, and completely indigestible for herbivores.\n\nSlurrypedes are docile, almost never hostile, and in case a mechanoid base is destroyed and one of them manages to survive, they tend to roam the wilderness aimlessly, consuming any organic material in their path and turning it into nutrient paste.</description>
+				</value>
+			  </li>
+		</operations>
+	</Operation>
+  
+</Patch>

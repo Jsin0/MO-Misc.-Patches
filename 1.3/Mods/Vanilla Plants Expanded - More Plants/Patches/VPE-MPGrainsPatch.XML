@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+	  <operations>
+		<li Class="PatchOperationReplace" MayRequire="vanillaexpanded.vcooke">
+			<xpath>/Defs/ThingDef[defName="VCE_Barley"]/plant/harvestedThingDef</xpath>
+			<value>
+				<harvestedThingDef>DankPyon_RawWheat</harvestedThingDef>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace" MayRequire="vanillaexpanded.vcooke">
+			<xpath>/Defs/ThingDef[defName="VCE_Barley"]/description</xpath>
+			<value>
+			<description>A cereal grain that people can use in bread, beverages, stews, and other dishes. As a whole grain, barley provides fiber, vitamins, and minerals. \n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Barley is a "dual crop", in the sense that it produces both wheat and hay.</description>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace" MayRequire="vanillaexpanded.vcooke">
+			<xpath>/Defs/ThingDef[defName="VCE_Sorghum"]/plant/harvestedThingDef</xpath>
+			<value>
+				<harvestedThingDef>DankPyon_RawWheat</harvestedThingDef>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace" MayRequire="vanillaexpanded.vcooke">
+			<xpath>/Defs/ThingDef[defName="VCE_Rye"]/description</xpath>
+			<value>
+			<description>A plant that grows well in much poorer soils than those necessary for most cereal grains. Thus, it is an especially valuable crop in regions where the soil has sand or peat. \n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Rye is only growable in sandy growing zones, which ignore fertility. These plants will however take a long time to sow and harvest, basically exchanging colonist work for growing plants in a normally unused space. Rye needs to be grown away from large bodies of water (water within 10 tiles of it will stop its growth).</description>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace" MayRequire="vanillaexpanded.vcooke">
+			<xpath>/Defs/ThingDef[defName="VCE_Rye"]/plant/harvestedThingDef</xpath>
+			<value>
+				<harvestedThingDef>DankPyon_RawWheat</harvestedThingDef>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace" MayRequire="vanillaexpanded.vcooke">
+			<xpath>/Defs/ThingDef[defName="VCE_Oats"]/description</xpath>
+			<value>
+			<description>The oat, sometimes called the common oat, is a species of cereal grain grown for its seed, which is known by the same name. Oats have numerous uses in gastronomy, and they can also be turned into vegetable milk.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Oat has low yield, but it is very versatile, being a "dual crop", in the sense that it produces both wheat and oats which can be either used as a vegetable or turned into milk.</description>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace" MayRequire="vanillaexpanded.vcooke">
+			<xpath>/Defs/ThingDef[defName="VCE_Oats"]/plant/harvestedThingDef</xpath>
+			<value>
+				<harvestedThingDef>DankPyon_RawWheat</harvestedThingDef>
+			</value>
+		</li>
+		<!-- etc -->
+		</operations>
+	</Operation>
+</Patch>
+ 
+   
