@@ -2,3 +2,7 @@ Medieval Overhaul Misc. Patches Changelog
 
 8/28/22
 *Fixed the Apothecary files by replacing the first MayRequire Attribute with a FindMod Operation
+
+9/13/22
+*Restructured entire mod to use LoadFolders
+*Lots of changes

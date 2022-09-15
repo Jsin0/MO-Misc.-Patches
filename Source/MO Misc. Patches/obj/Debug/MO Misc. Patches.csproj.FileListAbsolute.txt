@@ -1,4 +1,0 @@
-D:\SteamLibrary\steamapps\common\RimWorld\Mods\Medieval Overhaul Misc. Patches\Source\Assemblies\MO_MiscPatches.dll
-D:\SteamLibrary\steamapps\common\RimWorld\Mods\Medieval Overhaul Misc. Patches\Source\MO Misc. Patches\obj\Debug\MO Misc. Patches.csproj.AssemblyReference.cache
-D:\SteamLibrary\steamapps\common\RimWorld\Mods\Medieval Overhaul Misc. Patches\Source\MO Misc. Patches\obj\Debug\MO Misc. Patches.csproj.CoreCompileInputs.cache
-D:\SteamLibrary\steamapps\common\RimWorld\Mods\Medieval Overhaul Misc. Patches\Source\MO Misc. Patches\obj\Debug\MO_MiscPatches.dll
