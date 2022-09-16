@@ -27,6 +27,14 @@
 			<initialFuelPercent>0</initialFuelPercent>
 			</value>
 		</li>
+		<li Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName="VCE_StewPot"]/researchPrerequisites</xpath>
+			<value>
+				<researchPrerequisites>
+					<li>DankPyon_StewPot</li>
+				</researchPrerequisites>
+			</value>
+		</li>
 		<li Class="PatchOperationAdd">
 		  <xpath>Defs/ThingDef[defName="VCE_StewPot"]</xpath>
 		  <value>

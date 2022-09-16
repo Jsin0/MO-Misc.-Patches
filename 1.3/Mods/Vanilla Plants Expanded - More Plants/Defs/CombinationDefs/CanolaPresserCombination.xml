@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ItemProcessor.CombinationDef>
+		<defName>CanolaPressed</defName>
+		<building>DankPyon_Presser</building>
+		<items>
+			<li>VCE_RawCanola</li>
+		</items>	
+		<amount>
+			<li>100</li>
+		</amount>
+		<result>Chemfuel</result>	
+		<yield>25</yield>
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>1</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>
+</Defs>

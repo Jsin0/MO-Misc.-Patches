@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ItemProcessor.ItemAcceptedDef[defName="DankPyon_PressFirstItem"]/items</xpath>
+		<value>
+			<li>VCE_RawCanola</li>
+		</value>
+	</Operation>
+</Patch>
+ 
+   

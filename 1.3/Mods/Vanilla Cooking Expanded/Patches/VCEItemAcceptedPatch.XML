@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Alpha Animals</li>
+		</mods>
+			<match Class="PatchOperationAdd">
+				<xpath>/Defs/ItemProcessor.ItemAcceptedDef[defName="DankPyon_PressFirstItem"]/items</xpath>
+				<value>
+					<li>AA_BlueMilk</li>
+					<li>AA_GowMilk</li>						
+				</value>
+			<!-- etc -->
+			</match>
+	</Operation>
+</Patch>
+ 
+   
