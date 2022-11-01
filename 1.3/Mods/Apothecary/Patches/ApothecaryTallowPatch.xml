@@ -19,6 +19,12 @@
 					  </thingDefs>
 				</value>
 			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="AYCandle"]/costList/AYTallow</xpath>
+				<value>
+					<DankPyon_Tallow>20</DankPyon_Tallow>
+				</value>
+			</li>
 			<!--
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/RecipeDef[defName="MakeAYLavenderSoap"]/ingredients</xpath>
