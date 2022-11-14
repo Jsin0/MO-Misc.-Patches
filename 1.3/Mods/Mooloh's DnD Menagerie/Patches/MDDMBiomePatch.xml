@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Mooloh's Dnd Menagerie</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName = "DankPyon_AncientForest"]/wildAnimals</xpath>
+					<value>
+						<DND_DisplacerBeast>0.07</DND_DisplacerBeast>
+						<DND_Owlbear>0.1</DND_Owlbear>
+						<DND_Basilisk>0.06</DND_Basilisk>
+						<DND_FaerieDragon>0.3</DND_FaerieDragon>
+						<DND_Flumph>0.5</DND_Flumph>
+						<DND_GibberingMouther>0.01</DND_GibberingMouther>
+						<DND_RustMonster>0.05</DND_RustMonster>
+					</value>
+				  </li>
+				  
+				  <li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName = "DankPyon_DarkForest"]/wildAnimals</xpath>
+					<value>
+						<DND_DisplacerBeast>0.07</DND_DisplacerBeast>
+						<DND_Owlbear>0.1</DND_Owlbear>
+						<DND_Basilisk>0.06</DND_Basilisk>
+						<DND_FaerieDragon>0.3</DND_FaerieDragon>
+						<DND_Flumph>0.5</DND_Flumph>
+						<DND_GibberingMouther>0.01</DND_GibberingMouther>
+						<DND_RustMonster>0.05</DND_RustMonster>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+  
+</Patch>

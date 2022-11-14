@@ -22,6 +22,7 @@
 		 <li IfModActive="vanillaexpanded.vplantse">1.3/Mods/Vanilla Plants Expanded</li>
 		 <li IfModActive="vanillaexpanded.vplantsemore">1.3/Mods/Vanilla Plants Expanded - More Plants</li>
 		 <li IfModActive="lilscoot.wheelchairs">1.3/Mods/Wheelchairs</li>
+		 <li IfModActive="mooloh.dndmenagerie">1.3/Mods/Mooloh's DnD Menagerie</li>
 	 </v1.3>
 	 <v1.4>
 		 <li>1.3</li>
@@ -44,5 +45,6 @@
 		 <li IfModActive="vanillaexpanded.vplantse">1.3/Mods/Vanilla Plants Expanded</li>
 		 <li IfModActive="vanillaexpanded.vplantsemore">1.3/Mods/Vanilla Plants Expanded - More Plants</li>
 		 <li IfModActive="lilscoot.wheelchairs">1.3/Mods/Wheelchairs</li>
+		 <li IfModActive="mooloh.dndmenagerie">1.3/Mods/Mooloh's DnD Menagerie</li>
 	 </v1.4>
 </loadFolders>
