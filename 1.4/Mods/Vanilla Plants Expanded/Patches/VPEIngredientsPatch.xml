@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef/ingredients/li/filter/thingDefs[li="DankPyon_RawApples"]/li</xpath>
+		<value>
+			<li>VCE_RawApple</li>
+		</value>
+	</Operation>
+</Patch>
+ 
+   

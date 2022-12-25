@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[@Name = "CaslteDefendsBase"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelLabel</xpath>
+					<value>
+						<fuelLabel>Arrows remaining</fuelLabel>
+					</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[@Name = "CaslteDefendsBase"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelGizmoLabel</xpath>
+					<value>
+						<fuelGizmoLabel>Arrows</fuelGizmoLabel>
+					</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[@Name = "CaslteDefendsBase"]/comps/li[@Class = "CompProperties_Refuelable"]/outOfFuelMessage</xpath>
+					<value>
+						<outOfFuelMessage>Cannot shoot: out of Arrows</outOfFuelMessage>
+					</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

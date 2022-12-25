@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAdd">
+				  <xpath>/Defs</xpath>
+				  <value>
+					<RecipeDef ParentName="DankPyon_MineShaftBase">
+							<defName>Mine_VMEu_Coal</defName>
+							<workAmount>2000</workAmount>		
+							<label>Mine coal</label>
+							<jobString>Mining 25 iron.</jobString>
+						<products>
+						  <VMEu_Coal>25</VMEu_Coal>
+						</products>		
+					  </RecipeDef> 
+				  </value>
+			</li>
+			<li Class="PatchOperationAdd">
+				  <xpath>/Defs</xpath>
+				  <value>
+					<RecipeDef ParentName="DankPyon_MineShaftBase">
+							<defName>Mine_VMEu_Iron</defName>
+							<workAmount>1200</workAmount>		
+							<label>Mine iron</label>
+							<jobString>Mining 10 iron.</jobString>
+						<products>
+						  <VMEu_Iron>10</VMEu_Iron>
+						</products>		
+					  </RecipeDef> 
+				  </value>
+			</li>
+			<li Class="PatchOperationAdd">
+				  <xpath>/Defs</xpath>
+				  <value>
+					<RecipeDef ParentName="DankPyon_MineShaftBase">
+							<defName>Mine_VMEu_Lead</defName>
+							<workAmount>1200</workAmount>		
+							<label>Mine lead</label>
+							<jobString>Mining 10 lead.</jobString>
+						<products>
+						  <VMEu_Lead>10</VMEu_Lead>
+						</products>		
+					  </RecipeDef> 
+				  </value>
+			</li>
+			<li Class="PatchOperationAdd">
+				  <xpath>/Defs</xpath>
+				  <value>
+					<RecipeDef ParentName="DankPyon_MineShaftBase">
+							<defName>Mine_VMEu_Tin</defName>
+							<workAmount>800</workAmount>		
+							<label>Mine tin</label>
+							<jobString>Mining 20 tin.</jobString>
+						<products>
+						  <VMEu_Tin>20</VMEu_Tin>
+						</products>		
+					  </RecipeDef> 
+				  </value>
+			</li>
+			<li Class="PatchOperationAdd">
+				  <xpath>/Defs</xpath>
+				  <value>
+					<RecipeDef ParentName="DankPyon_MineShaftBase">
+							<defName>Mine_VMEu_Copper</defName>
+							<workAmount>800</workAmount>		
+							<label>Mine copper</label>
+							<jobString>Mining 20 copper.</jobString>
+						<products>
+						  <VMEu_Copper>20</VMEu_Copper>
+						</products>		
+					  </RecipeDef> 
+				  </value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

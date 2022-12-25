@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+	  <operations>
+		<li Class="PatchOperationReplace">
+		  <xpath>Defs/ThingDef[defName="VCE_StewPot"]/graphicData/texPath</xpath>
+		  <value>
+			<texPath>Production/Stew</texPath>
+		  </value>
+		</li>
+		<!--
+		<li Class="PatchOperationReplace">
+		  <xpath>Defs/ThingDef[defName="VCE_StewPot"]/costList</xpath>
+		  <value>
+			<costList>
+				<WoodLog>20</WoodLog>
+			</costList>
+		  </value>
+		</li>
+		-->
+		<li Class="PatchOperationRemove">
+		  <xpath>Defs/ThingDef[defName="VCE_StewPot"]/costList</xpath>
+		</li>
+		<li Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName="VCE_StewPot"]/comps/li[@Class="CompProperties_Refuelable"]/initialFuelPercent</xpath>
+			<value>
+			<initialFuelPercent>0</initialFuelPercent>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName="VCE_StewPot"]/researchPrerequisites</xpath>
+			<value>
+				<researchPrerequisites>
+					<li>DankPyon_StewPot</li>
+				</researchPrerequisites>
+			</value>
+		</li>
+		<li Class="PatchOperationAdd">
+		  <xpath>Defs/ThingDef[defName="VCE_StewPot"]</xpath>
+		  <value>
+			<stuffCategories>
+				<li>Metallic</li>
+			</stuffCategories>
+			<costStuffCount>100</costStuffCount>
+		  </value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName="VCE_StewPot"]/comps/li[@Class="ItemProcessor.CompProperties_ItemProcessor"]/buildingOnGraphic</xpath>
+			<value>
+			<buildingOnGraphic>Production/StewPot</buildingOnGraphic>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName="VCE_StewPot"]/comps/li[@Class="ItemProcessor.CompProperties_ItemProcessor"]/buildingFinishedGraphic</xpath>
+			<value>
+			<buildingFinishedGraphic>Production/StewPot</buildingFinishedGraphic>
+			</value>
+		</li>
+		<!-- etc -->
+		</operations>
+	</Operation>
+</Patch>
+ 
+   

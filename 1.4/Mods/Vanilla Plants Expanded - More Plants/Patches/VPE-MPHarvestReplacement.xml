@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		  <operations>
+		<!-- Replacing Garlic -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="VCE_Garlic"]/plant/harvestedThingDef</xpath>
+				<value>
+					<harvestedThingDef>DankPyon_RawGarlic</harvestedThingDef>
+				</value>
+			</li>
+		<!-- Replacing Carrot-->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="VCE_Carrot"]/plant/harvestedThingDef</xpath>
+				<value>
+					<harvestedThingDef>DankPyon_RawCarrots</harvestedThingDef>
+				</value>
+			</li>
+			<!-- etc -->
+			</operations>
+	</Operation>
+</Patch>
+ 
+   
