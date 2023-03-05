@@ -16,6 +16,12 @@
 					<harvestedThingDef>DankPyon_RawPumpkins</harvestedThingDef>
 				</value>
 			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="VCE_Pumpkin"]/plant/harvestYield</xpath>
+				<value>
+					<harvestYield>1</harvestYield>
+				</value>
+			</li>
 		<!-- Replacing Onions-->
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="VCE_Onion"]/plant/harvestedThingDef</xpath>

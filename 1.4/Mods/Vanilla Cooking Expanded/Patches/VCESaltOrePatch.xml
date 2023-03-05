@@ -8,6 +8,7 @@
 					<mineableThing>VCE_Salt</mineableThing>
 				</value>
 			</li>
+			<!--Mineshaft recipe-->
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/RecipeDef[defName="DankPyon_MakeSalt"]/products</xpath>
 				<value>
@@ -16,16 +17,23 @@
 					</products>	
 				</value>
 			</li>
-			<!--
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/RecipeDef[defName="DankPyon_MakeSalt10"]/products</xpath>
+				<xpath>Defs/RecipeDef[defName="DankPyon_MakeSaltBulk"]/products</xpath>
 				<value>
 					<products>
 						<VCE_Salt>10</VCE_Salt>
 					</products>	
 				</value>
 			</li>
-			-->
+			<!--Mining spot recipes-->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName="DankPyon_Gather_Salt"]/products</xpath>
+				<value>
+					<products>
+						<VCE_Salt>5</VCE_Salt>
+					</products>	
+				</value>
+			</li>
 		</operations>
 	</Operation>
 </Patch>
