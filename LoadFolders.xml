@@ -18,7 +18,7 @@
 		 <li IfModActive="vanillaexpanded.vcooke">1.3/Mods/Vanilla Cooking Expanded</li>
 		 <li IfModActive="vanillaexpanded.vcookestews">1.3/Mods/Vanilla Cooking Expanded - Stews</li>
 		 <li IfModActive="vanillaexpanded.vcookesushi">1.3/Mods/Vanilla Cooking Expanded - Sushi</li>
-		 <li IfModActive="oskarpotocki.vfe.vikings">1.3/Mods/Vanilla Factions Expanded - Medieval</li>
+		 <li IfModActive="OskarPotocki.VanillaFactionsExpanded.MedievalModule">1.3/Mods/Vanilla Factions Expanded - Medieval</li>
 		 <li IfModActive="vanillaexpanded.vplantse">1.3/Mods/Vanilla Plants Expanded</li>
 		 <li IfModActive="vanillaexpanded.vplantsemore">1.3/Mods/Vanilla Plants Expanded - More Plants</li>
 		 <li IfModActive="lilscoot.wheelchairs">1.3/Mods/Wheelchairs</li>
@@ -41,7 +41,7 @@
 		 <li IfModActive="vanillaexpanded.vcooke">1.4/Mods/Vanilla Cooking Expanded</li>
 		 <li IfModActive="vanillaexpanded.vcookestews">1.4/Mods/Vanilla Cooking Expanded - Stews</li>
 		 <li IfModActive="vanillaexpanded.vcookesushi">1.4/Mods/Vanilla Cooking Expanded - Sushi</li>
-		 <li IfModActive="oskarpotocki.vfe.vikings">1.4/Mods/Vanilla Factions Expanded - Medieval</li>
+		 <li IfModActive="OskarPotocki.VanillaFactionsExpanded.MedievalModule">1.4/Mods/Vanilla Factions Expanded - Medieval</li>
 		 <li IfModActive="vanillaexpanded.vplantse">1.4/Mods/Vanilla Plants Expanded</li>
 		 <li IfModActive="vanillaexpanded.vplantsemore">1.4/Mods/Vanilla Plants Expanded - More Plants</li>
 		 <li IfModActive="lilscoot.wheelchairs">1.4/Mods/Wheelchairs</li>
